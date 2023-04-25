@@ -9,7 +9,7 @@ export class UsersController {
   constructor(protected readonly createUserUseCase: CreateUserUseCase) {}
 
   @Post()
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   async create(@Body() dto: CreateUserDto) {
     const data = await this.createUserUseCase.execute(dto.toPlainObject());
 
