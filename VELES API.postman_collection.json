@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "5f45209d-ed21-44a1-b2bf-5b4552ddf35a",
+		"name": "VELES API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2792707"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2FpcXVlIENhdmFsY2FudGkiLCJzdWIiOiI1NDdiN2NkOC02OGYxLTQ5Y2UtOTFkMi1jYzkzNmNmZDdlMGIiLCJpYXQiOjE2ODIxMzQzNzMsImV4cCI6MTY4MjIyMDc3M30.LFH1obZaaBpre8cc3GMnevOmnlNvIQgomw09qmbFhYk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"a70c91b9-36b3-47c2-bb4a-33a9796824c1\",\r\n    \"name\": \"Kaique Cavalcanti\",\r\n    \"email\": \"kaiquescsantoss@email.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BLACKLIST",
+			"item": [
+				{
+					"name": "CREATE GROUP",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2FpcXVlIENhdmFsY2FudGkiLCJzdWIiOiI1NDdiN2NkOC02OGYxLTQ5Y2UtOTFkMi1jYzkzNmNmZDdlMGIiLCJpYXQiOjE2ODIyNjY5OTUsImV4cCI6MTY4MjM1MzM5NX0.wRkN4V4zA2D2c_DksRW2eSOpxzqzmPzPOkBiU_9ugzI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\": \"Group 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/blacklist-groups",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"blacklist-groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2FpcXVlIENhdmFsY2FudGkiLCJzdWIiOiI1NDdiN2NkOC02OGYxLTQ5Y2UtOTFkMi1jYzkzNmNmZDdlMGIiLCJpYXQiOjE2ODIyNjY5OTUsImV4cCI6MTY4MjM1MzM5NX0.wRkN4V4zA2D2c_DksRW2eSOpxzqzmPzPOkBiU_9ugzI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone_number\": \"5511988786883\",\r\n    \"group_ids\": [\"6dbff6c3-b9bb-4c51-84ed-aef609949b27\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/blacklists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"blacklists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2FpcXVlIENhdmFsY2FudGkiLCJzdWIiOiI1NDdiN2NkOC02OGYxLTQ5Y2UtOTFkMi1jYzkzNmNmZDdlMGIiLCJpYXQiOjE2ODIyNjY5OTUsImV4cCI6MTY4MjM1MzM5NX0.wRkN4V4zA2D2c_DksRW2eSOpxzqzmPzPOkBiU_9ugzI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/blacklists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"blacklists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST GROUP",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2FpcXVlIENhdmFsY2FudGkiLCJzdWIiOiI1NDdiN2NkOC02OGYxLTQ5Y2UtOTFkMi1jYzkzNmNmZDdlMGIiLCJpYXQiOjE2ODIyNjY5OTUsImV4cCI6MTY4MjM1MzM5NX0.wRkN4V4zA2D2c_DksRW2eSOpxzqzmPzPOkBiU_9ugzI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/blacklists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"blacklists"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"kaiquescsantoss@email.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

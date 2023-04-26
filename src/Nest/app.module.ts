@@ -5,6 +5,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import mongodbConfig from '../Core/Infra/Database/Typeorm/Mongodb/ormconfig';
 import { BlacklistModule } from './blacklist/blacklist.module';
+import { ProjectsModule } from './projects/projects.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { BlacklistModule } from './blacklist/blacklist.module';
     AuthModule,
     UsersModule,
     BlacklistModule,
+    ProjectsModule,
   ],
   controllers: [],
 })
